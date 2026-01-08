@@ -10,5 +10,6 @@
   <output>
     <tripinfo-output value="results_tripinfo.xml"/>
     <summary-output value="results_summary.xml"/>
+    <summary-output value="summary.xml"/>
   </output>
 </configuration>
