@@ -1,6 +1,50 @@
-  <additional>
-    <edgeData id="corridor_analysis" 
-              file="edge_results.xml" 
-              freq="360" 
-              edges="E0E1 E1E2 E2E3 E3E4 E4E5"/>
-  </additional>
+<additional>
+    <edgeData id="bus_stats" file="bus_results.xml" freq="360" vClass="bus" edges="E0E1 E1E2 E2E3 E3E4 E4E5"/>
+    <edgeData id="car_stats" file="car_results.xml" freq="360" vClass="passenger" edges="E0E1 E1E2 E2E3 E3E4 E4E5"/>
+
+    <tlLogic id="E1" type="static" programID="1" offset="0">
+        <phase duration="50" state="grrrgGGrgrrrgGGr"/> <phase duration="3"  state="grrrgGGrgrrrgyyr"/>
+        <phase duration="10" state="grrrgGGGgrrrgrrr"/> 
+        <phase duration="3"  state="grrrgyyygrrrgrrr"/>
+        <phase duration="10" state="grrrgrrrgrrrgGGG"/>
+        <phase duration="3"  state="grrrgrrrgrrrgyyG"/>
+        <phase duration="10" state="grrrgrrGgrrrgrrG"/>
+        <phase duration="3"  state="grrrgrrygrrrgrry"/>
+        <phase duration="50" state="gGGrgrrrgGGrgrrr"/> <phase duration="3"  state="gyyrgrrrgGGrgrrr"/>
+        <phase duration="10" state="grrrgrrrgGGGgrrr"/>
+        <phase duration="3"  state="grrrgrrrgyyygrrr"/>
+        <phase duration="10" state="gGGGgrrrgrrrgrrr"/>
+        <phase duration="3"  state="gyyGgrrrgrrrgrrr"/>
+        <phase duration="10" state="grrGgrrrgrrGgrrr"/>
+        <phase duration="3"  state="grrygrrrgrrygrrr"/>
+    </tlLogic>
+
+    <tlLogic id="E2" type="static" programID="1" offset="0">
+        <phase duration="50" state="grrrgGGrgrrrgGGr"/>
+        <phase duration="3"  state="grrrgGGrgrrrgyyr"/>
+        <phase duration="10" state="grrrgGGGgrrrgrrr"/>
+        <phase duration="3"  state="grrrgyyygrrrgrrr"/>
+        <phase duration="10" state="grrrgrrrgrrrgGGG"/>
+        <phase duration="3"  state="grrrgrrrgrrrgyyG"/>
+        <phase duration="10" state="grrrgrrGgrrrgrrG"/>
+        <phase duration="3"  state="grrrgrrygrrrgrry"/>
+        <phase duration="50" state="gGGrgrrrgGGrgrrr"/>
+        <phase duration="3"  state="gyyrgrrrgGGrgrrr"/>
+        <phase duration="10" state="grrrgrrrgGGGgrrr"/>
+        <phase duration="3"  state="grrrgrrrgyyygrrr"/>
+        <phase duration="10" state="gGGGgrrrgrrrgrrr"/>
+        <phase duration="3"  state="gyyGgrrrgrrrgrrr"/>
+        <phase duration="10" state="grrGgrrrgrrGgrrr"/>
+        <phase duration="3"  state="grrygrrrgrrygrrr"/>
+    </tlLogic>
+
+    <tlLogic id="E3" type="static" programID="1" offset="0">
+        <phase duration="50" state="grrrgGGrgrrrgGGr"/>
+        <phase duration="3"  state="grrrgGGrgrrrgyyr"/><phase duration="10" state="grrrgGGGgrrrgrrr"/><phase duration="3"  state="grrrgyyygrrrgrrr"/><phase duration="10" state="grrrgrrrgrrrgGGG"/><phase duration="3"  state="grrrgrrrgrrrgyyG"/><phase duration="10" state="grrrgrrGgrrrgrrG"/><phase duration="3"  state="grrrgrrygrrrgrry"/><phase duration="50" state="gGGrgrrrgGGrgrrr"/><phase duration="3"  state="gyyrgrrrgGGrgrrr"/><phase duration="10" state="grrrgrrrgGGGgrrr"/><phase duration="3"  state="grrrgrrrgyyygrrr"/><phase duration="10" state="gGGGgrrrgrrrgrrr"/><phase duration="3"  state="gyyGgrrrgrrrgrrr"/><phase duration="10" state="grrGgrrrgrrGgrrr"/><phase duration="3"  state="grrygrrrgrrygrrr"/>
+    </tlLogic>
+    
+    <tlLogic id="E4" type="static" programID="1" offset="0">
+        <phase duration="50" state="grrrgGGrgrrrgGGr"/>
+        <phase duration="3"  state="grrrgGGrgrrrgyyr"/><phase duration="10" state="grrrgGGGgrrrgrrr"/><phase duration="3"  state="grrrgyyygrrrgrrr"/><phase duration="10" state="grrrgrrrgrrrgGGG"/><phase duration="3"  state="grrrgrrrgrrrgyyG"/><phase duration="10" state="grrrgrrGgrrrgrrG"/><phase duration="3"  state="grrrgrrygrrrgrry"/><phase duration="50" state="gGGrgrrrgGGrgrrr"/><phase duration="3"  state="gyyrgrrrgGGrgrrr"/><phase duration="10" state="grrrgrrrgGGGgrrr"/><phase duration="3"  state="grrrgrrrgyyygrrr"/><phase duration="10" state="gGGGgrrrgrrrgrrr"/><phase duration="3"  state="gyyGgrrrgrrrgrrr"/><phase duration="10" state="grrGgrrrgrrGgrrr"/><phase duration="3"  state="grrygrrrgrrygrrr"/>
+    </tlLogic>
+</additional>
