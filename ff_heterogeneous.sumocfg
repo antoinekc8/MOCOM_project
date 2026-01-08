@@ -2,6 +2,7 @@
   <input>
     <net-file value="ff.net.xml"/>
 	  <route-files value="ff_heterogeneous.rou.xml"/>
+    <additional-files value="corridor_stats.add.xml"/>
   </input>
   <time>
     <begin value="0"/>
@@ -10,5 +11,6 @@
   <output>
     <tripinfo-output value="results_tripinfo.xml"/>
     <summary-output value="results_summary.xml"/>
+    <summary-output value="summary.xml"/>
   </output>
 </configuration>

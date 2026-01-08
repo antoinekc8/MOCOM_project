@@ -1,0 +1,6 @@
+  <additional>
+    <edgeData id="corridor_analysis" 
+              file="edge_results.xml" 
+              freq="360" 
+              edges="E0E1 E1E2 E2E3 E3E4 E4E5"/>
+  </additional>
