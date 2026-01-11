@@ -1,0 +1,33 @@
+<additional>
+    <edgeData id="bus_stats" file="bus_results.xml" freq="360" vClass="bus" edges="E0E1 E1E2 E2E3 E3E4 E4E5"/>
+    
+<tlLogic id="E1" type="static" programID="onda_60s_v2" offset="0">
+        <phase duration="15" state="GGGrrrrrGGGrrrrr"/> <phase duration="12" state="rrrGrrrrrrrGrrrr"/> <phase duration="3"  state="yyyyrrrryyyyrrrr"/> <phase duration="15" state="rrrrGGGrrrrrGGGr"/> <phase duration="12" state="rrrrrrrGrrrrrrrG"/> <phase duration="3"  state="rrrryyyyrrrryyyy"/> </tlLogic>
+
+    <tlLogic id="E2" type="static" programID="onda_60s_v2" offset="20">
+        <phase duration="15" state="GGGrrrrrGGGrrrrr"/>
+        <phase duration="12" state="rrrGrrrrrrrGrrrr"/>
+        <phase duration="3"  state="yyyyrrrryyyyrrrr"/>
+        <phase duration="15" state="rrrrGGGrrrrrGGGr"/>
+        <phase duration="12" state="rrrrrrrGrrrrrrrG"/>
+        <phase duration="3"  state="rrrryyyyrrrryyyy"/>
+    </tlLogic>
+
+    <tlLogic id="E3" type="static" programID="onda_60s_v2" offset="40">
+        <phase duration="15" state="GGGrrrrrGGGrrrrr"/>
+        <phase duration="12" state="rrrGrrrrrrrGrrrr"/>
+        <phase duration="3"  state="yyyyrrrryyyyrrrr"/>
+        <phase duration="15" state="rrrrGGGrrrrrGGGr"/>
+        <phase duration="12" state="rrrrrrrGrrrrrrrG"/>
+        <phase duration="3"  state="rrrryyyyrrrryyyy"/>
+    </tlLogic>
+
+    <tlLogic id="E4" type="static" programID="onda_60s_v2" offset="0">
+        <phase duration="15" state="GGGrrrrrGGGrrrrr"/>
+        <phase duration="12" state="rrrGrrrrrrrGrrrr"/>
+        <phase duration="3"  state="yyyyrrrryyyyrrrr"/>
+        <phase duration="15" state="rrrrGGGrrrrrGGGr"/>
+        <phase duration="12" state="rrrrrrrGrrrrrrrG"/>
+        <phase duration="3"  state="rrrryyyyrrrryyyy"/>
+    </tlLogic>
+</additional>
