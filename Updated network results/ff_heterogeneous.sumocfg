@@ -9,7 +9,16 @@
     <end value="3600"/>
   </time>
   <output>
-    <tripinfo-output value="results_tripinfo.xml"/>
-    <summary-output value="results_summary.xml"/>
+    <!-- Vehicle trip information -->
+    <tripinfo-output value="tripinfo.xml"/>
+    
+    <!-- Queue length at edges -->
+    <queue-output value="queue.xml"/>
+    
+    <!-- Emissions data -->
+    <emission-output value="emissions.xml"/>
+    
+    <!-- Summary statistics -->
+    <summary-output value="summary.xml"/>
   </output>
 </configuration>
