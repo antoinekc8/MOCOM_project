@@ -1,0 +1,5 @@
+# Normalize text files and keep LF in repo/working tree
+* text=auto eol=lf
+
+# Explicitly keep XML files as LF
+*.xml text eol=lf

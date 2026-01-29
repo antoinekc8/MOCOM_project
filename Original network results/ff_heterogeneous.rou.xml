@@ -1,18 +1,38 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<routes>
-  <vType id="car" carFollowModel="Krauss" sigma="0.5" accel="2.0" decel="4.5" length="5.0" maxSpeed="13.9" />
-  <additional>
-    <vType id="bus" 
-           vClass="bus" 
-           accel="1.2" 
-           decel="4.0" 
-           sigma="0.5" 
-           length="12.00" 
-           minGap="3.00" 
-           maxSpeed="22.22" 
-           guiShape="bus" 
-           color="yellow"/>
-</additional>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2025-12-11 10:37:34 by Eclipse SUMO netedit Version 1.24.0
+-->
+
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <!-- VTypes -->
+    <vType id="t_0" vClass="bus"/>
+	<vType id="car" carFollowModel="Krauss" sigma="0.5" accel="2.0" decel="4.5" length="5.0" maxSpeed="13.9" />
+	
+    <!-- Vehicles, persons and containers (sorted by depart) -->
+    <flow id="f_0" type="DEFAULT_BIKETYPE" begin="0.00" end="3600.00" period="exp(0.33)">
+        <route edges="D5D4 D4D3 D3D2 D2D1 D1D0"/>
+    </flow>
+    <flow id="f_1" type="DEFAULT_BIKETYPE" begin="0.00" color="0,255,50" end="3600.00" period="exp(0.33)">
+        <route edges="D0D1 D1D2 D2D3 D3D4 D4D5"/>
+    </flow>
+    <flow id="f_2" type="DEFAULT_BIKETYPE" begin="0.00" color="0,255,50" end="3600.00" period="exp(0.33)">
+        <route edges="B0B1 B1B2 B2B3 B3B4 B4B5"/>
+    </flow>
+    <flow id="f_3" type="DEFAULT_BIKETYPE" begin="0.00" color="0,255,50" end="3600.00" period="exp(0.33)">
+        <route edges="B5B4 B4B3 B3B2 B2B1 B1B0"/>
+    </flow>
+    <flow id="f_4" type="t_0" begin="0.00" end="3600.00" vehsPerHour="60">
+        <route edges="C5C4 C4C3 C3C2 C2C1 C1C0"/>
+    </flow>
+    <flow id="f_5" type="t_0" begin="0.00" end="3600.00" vehsPerHour="60">
+        <route edges="C0C1 C1C2 C2C3 C3C4 C4C5"/>
+    </flow>
+    <flow id="f_6" type="t_0" begin="180.00" end="3600.00" vehsPerHour="20">
+        <route edges="E5E4 E4E3 E3E2 E2E1 E1E0"/>
+    </flow>
+    <flow id="f_7" type="t_0" begin="180.00" end="3600.00" vehsPerHour="20">
+        <route edges="E0E1 E1E2 E2E3 E3E4 E4E5"/>
+    </flow>
   <flow id="f1" type="car" begin="0" end="180" probability="0.004021" departLane="random" departPos="random" departSpeed="max" from="E0E1" to="D1D0" />
   <flow id="f2" type="car" begin="0" end="180" probability="0.001850" departLane="random" departPos="random" departSpeed="max" from="E0E1" to="C1C0" />
   <flow id="f3" type="car" begin="0" end="180" probability="0.002275" departLane="random" departPos="random" departSpeed="max" from="E0E1" to="B1B0" />
@@ -80654,4 +80674,5 @@
   <flow id="f80638" type="car" begin="3420" end="3600" probability="0.000114" departLane="random" departPos="random" departSpeed="max" from="E4E3" to="E3E2" />
   <flow id="f80639" type="car" begin="3420" end="3600" probability="0.000072" departLane="random" departPos="random" departSpeed="max" from="E4E3" to="E3E4" />
   <flow id="f80640" type="car" begin="3420" end="3600" probability="0.000074" departLane="random" departPos="random" departSpeed="max" from="E4E3" to="E4D4" />
+
 </routes>
